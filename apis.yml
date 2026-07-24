@@ -1,4 +1,16 @@
 aid: chumanapp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chumanapp.png
 name: chumanapp
 description: chumanapp is a company surfaced as a portfolio company of qiming and added to the API Evangelist
   network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -9,9 +21,21 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-status: no-active-surface
+x-enrichment-note: 'Re-probed 2026-07-20 (confirms 2026-07-18): chumanapp.com resolves
+  (A 208.98.43.40, drifted from 208.98.40.39) but serves a domain-for-sale parking
+  page via 4.cn (listed CNY 5,587.00, pid 35211175), referencing the defunct 触漫/Chuman
+  anime creative community. No active site, API, docs, SDKs, or developer surface.
+  Apex https times out; only www responds. No MX records. WARNING FOR FUTURE ROUNDS:
+  the parking host is a SOFT-404 CATCH-ALL — every path returns HTTP 200 with a
+  byte-identical parking page (md5 b8a1a35e944b294497be6092702101ff), including
+  /.well-known/security.txt, /.well-known/openid-configuration, /.well-known/api-catalog,
+  /llms.txt, /openapi.json AND a nonsense control path. Those 200s are NOT real
+  documents; do not record them as a WellKnown/LLMsTxt/OpenAPI surface. No artifacts
+  generated (no-fabrication). Skip until a live surface is found.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 apis: []
@@ -23,3 +47,8 @@ maintainers:
 common:
 - type: Website
   url: https://chumanapp.com
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
