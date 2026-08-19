@@ -33,7 +33,7 @@ x-enrichment-note: 'Re-probed 2026-07-20 (confirms 2026-07-18): chumanapp.com re
   /llms.txt, /openapi.json AND a nonsense control path. Those 200s are NOT real
   documents; do not record them as a WellKnown/LLMsTxt/OpenAPI surface. No artifacts
   generated (no-fabrication). Skip until a live surface is found.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
